@@ -81,13 +81,14 @@ export const Experience = () => {
               <h3 className="font-serif text-2xl mt-2 mb-2">{work.title}</h3>
               <hr className="border-t-2 border-white/5" />
               <ul className="flex flex-col gap-3 mt-4">
-                {work.results.map(result =>(
-                  <li className="flex gap-2 text-white/50">
-                    <CheckCircleIcon className="size-5"/>
+                {work.results.map((result, index) => (
+                  <li key={`${result.title}-${index}`} className="flex gap-2 text-white/50">
+                    <CheckCircleIcon className="size-5" />
                     <span>{result.title}</span>
                   </li>
                 ))}
               </ul>
+
               <a href={work.link} target="_blank" rel="noopener noreferrer">
                 <button className="bg-white text-gray-1000 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                   <span>Visit Resource</span>

@@ -19,10 +19,10 @@ export const Footer = () => {
         <div className='text-white/40'>&copy; 2025. All rights reserved. | Images are for Illustrative purposes only. </div>
           <nav className='flex flex-col md:flex-row items-center gap-8'>
             {FooterLinks.map(link => (
-              <a href="#" key={link.title} className='inline-flex items-center gap-1.5'>
-                <span className='font-semibold'>{link.title}</span>
-                <ArrowRight className="size-4"/>
-              </a>
+              <a href={link.link} key={link.title} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5">
+              <span className="font-semibold">{link.title}</span>
+              <ArrowRight className="size-4" />
+            </a>            
             ))}
           </nav>
         </div>

@@ -37,9 +37,9 @@ export const ContactSection = () => {
             <div className="md:text-left md:py-24 max-w-96">
               <h2 className="font-bold text-3xl md:text-5xl">Get in Touch!</h2>
               <p className="text-sm mt-2 mb-2">
-                If you're looking for a dedicated and skilled professional, I’d
-                love to hear from you. Let’s connect and discuss how I can
-                contribute to your team.
+              If you&apos;re looking for a dedicated and skilled professional, I&rsquo;d
+              love to hear from you. Let&rsquo;s connect and discuss how I can
+              contribute to your team.
               </p>
             </div>
 

@@ -204,22 +204,32 @@ export const AboutSection = () => {
           {/* SECTION ABOUT HOBBIES*/}
           <div className='grid grid-cols-1 gap-8 md:grid-cols-5'>
             <Card className='h-[320px] flex flex-col col-span-3'>
-              <CardHeader title="Beyond the Code" description="Explore my hobbies and interests outside of code" className='px-6 py-6'/>
-                <div className='relative flex-1' ref={beyondTheCodeRef}>
-                  {hobbies.map(hobby => (
-                    <motion.div 
-                        className='inline-flex gap-2  items-center px-5 bg-gradient-to-r from-purple-600 to-purple-900 rounded-full py-1.5 absolute'
-                        style={{left:hobby.left, top:hobby.top,}}
-                        drag
-                        dragConstraints={beyondTheCodeRef}
-                      >
-                      <span className='font-semibold text-white'>
-                        {hobby.title}
-                      </span>
-                      <Image src={hobby.emoji} alt="Emoji Representing hobby" width={18} height={18}/>
-                    </motion.div>
-                  ))}
-                </div>
+              <CardHeader
+                title="Beyond the Code"
+                description="Explore my hobbies and interests outside of code"
+                className='px-6 py-6'
+              />
+              <div className='relative flex-1' ref={beyondTheCodeRef}>
+                {hobbies.map((hobby) => (
+                  <motion.div
+                    key={hobby.title} // Add the key prop here
+                    className='inline-flex gap-2 items-center px-5 bg-gradient-to-r from-purple-600 to-purple-900 rounded-full py-1.5 absolute'
+                    style={{ left: hobby.left, top: hobby.top }}
+                    drag
+                    dragConstraints={beyondTheCodeRef}
+                  >
+                    <span className='font-semibold text-white'>
+                      {hobby.title}
+                    </span>
+                    <Image
+                      src={hobby.emoji}
+                      alt={`Emoji Representing hobby: ${hobby.title}`}
+                      width={18}
+                      height={18}
+                    />
+                  </motion.div>
+                ))}
+              </div>
             </Card>
 
             {/* SECTION ABOUT MY CURRENT LOCATION*/}  
