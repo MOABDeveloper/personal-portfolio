@@ -30,12 +30,12 @@ export default function Home() {
       <section id="hero">
         <HeroSection />
       </section>
-      <section id="projects">
-        <ProjectsSection />
-      </section>
       <section id="experience">
-        <TapeSection />
         <Experience />
+      </section>
+      <section id="projects">
+        <TapeSection />
+        <ProjectsSection />
         <TapeSection />
       </section>
       <section id="about">

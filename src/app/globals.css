@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base{
-
     /*Global for top navigation bar*/
     .nav-item{
         @apply 
@@ -44,3 +43,4 @@
     @apply lg:max-w-5xl
   }
 }
+

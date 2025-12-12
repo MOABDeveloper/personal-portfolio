@@ -25,7 +25,7 @@ export const HeroSection = () => {
         <div className='max-w-xl mx-auto'>
         <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide"  style={{ minHeight: "6rem" }}>
             <ReactTyped
-              strings={["Hello, I'm Mohammed Abdul-Nabi.", "Passionate FullStack Developer."]}
+              strings={["Hello, I'm Mohammed Abdul-Nabi.", "From UI to API — I build it all."]}
               typeSpeed={100}
               backSpeed={50}
               loop

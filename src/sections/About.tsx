@@ -17,9 +17,9 @@ import SmileMemoji from '@/assets/images/locationPin.png';
 import CplusplusIcon from '@/assets/icons/cplusplus.svg';
 import CIcon from '@/assets/icons/c.svg';
 import JavaIcon from '@/assets/icons/java.svg';
-import PythonIcon from '@/assets/icons/python.svg'
-import ReactIcon from '@/assets/icons/react.svg';
-import HTMLIcon from '@/assets/icons/html5.svg';
+import PythonIcon from '@/assets/icons/Python.svg'
+import ReactIcon from '@/assets/icons/React.svg';
+import HTMLIcon from '@/assets/icons/HTML5.svg';
 import CSSIcon from '@/assets/icons/css.svg';
 import ARMIcon from '@/assets/icons/arm.svg';
 import SQLIcon from '@/assets/icons/sql.svg';

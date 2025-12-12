@@ -1,46 +1,44 @@
-import SimulatorImage from '@/assets/images/simulator.jpg'
+import BSPD from '@/assets/images/BSPD.png'
 import PetcareImage from '@/assets/images/petcare.jpg'
-import NotificationImage from '@/assets/images/Notification.png'
 import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import GitHubIcon from '@/assets/icons/arrow-up-right.svg'
-
-
+import TTMS from '@/assets/images/TyreSense.png'
 
 import {Card} from '@/components/Card'
 const portfolioProjects = [
   {
-    company: "Built with Opensource Tools",
-    title: "WFR - Driver in the Loop Simulator",
+    company: "Built with: Altium",
+    title: "Brake Signal Plausibility Device (BSPD)",
     results: [
-      { title: "High-fidelity Racing Simulator for driver training. " },
-      { title: "Translated real world vehicle dynamics to the virtual world." },
-      { title: "Replicated real wolrd FSAE track layouts to increase strategic advantage." },
+      { title: "Validates brake/throttle signals in real time & triggers shutdown." },
+      { title: "Reduced PCB footprint and component count by 30%." },
+      { title: "Stable and faultless operation." },
     ],
-    link: "/DriverinTheLoop.pdf",
-    image: SimulatorImage,
+    link: "https://abdulnabi.dev/BSPDDesignDoc.pdf",
+    image: BSPD,
+  },
+  {
+    company: "Build in Progress..",
+    title: "Tyre Telemetry Monitoring System",
+    results: [
+      { title: "Provides real-time tyre data to improve tuning and diagnostics." },
+      { title: "Built a dev board to validate sensors, power design, and wireless performance." },
+      { title: "Utaliizing BLE to transmit wirelessly from tyre to reciever on vehicle" },
+    ],
+    link: "https://abdulnabi.dev/TyreSenseDevBoard.pdf",
+    image: TTMS,
   },
   {
     company: "Built with: Java",
     title: "Virtual Pet Care Game",
     results: [
-      { title: "Developing and implementing a virtual pet care simulation application in Java." },
-      { title: "Collaborating within a team to apply and utilize software engineering principles." },
-      { title: "Designing and integrating an intuitive UI to increase immersion." },
+      { title: "Developed and implemented a virtual pet care simulation application in Java." },
+      { title: "Collaborated within a team to apply and utilize software engineering principles." },
+      { title: "Designed and integrated an intuitive UI to increase immersion." },
     ],
-    link: "/ProjectSpecifications.pdf",
+    link: "https://github.com/MOABDeveloper/VirtualPetCare",
     image: PetcareImage,
-  },
-  {
-    company: "Built on: Ardunio",
-    title: "IoT Notifications and SMS",
-    results: [
-      { title: "Designed an IoT system for automated event notifications from an API." },
-      { title: "Enhanced notifications with Twilio SMS and speaker alerts." },
-      { title: "Integrated sensors, controllers, and communication modules seamlessly." },
-    ],
-    link: "https://github.com/MOABDeveloper/NotificationDevice",
-    image: NotificationImage,
   },
 ];
 
